@@ -1,0 +1,454 @@
+/* overlay */
+/* nav-overlay */
+.nav-overlay {
+    width: 100%;
+    height: 100vh;
+
+    background-color: #ffffffaf;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+
+    display: none;
+    flex-direction: column;
+
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.nav-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.nav-overlay-content {
+    width: 80%;
+    max-width: 330px;
+    height: 450px;
+    margin: auto;
+    padding: 7% 7% 3%;
+
+    background-color: #0092dd;
+    border: 7px solid #ffffff;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-25deg);
+    }
+}
+
+.nav-logo {
+    width: 50px;
+
+    position: absolute;
+    left: 9%;
+    top: 3%;
+
+    transform: rotate(0deg);
+
+    animation: rotate-animation 1s infinite alternate ease-in-out;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+.nav-x {
+    position: absolute;
+    right: 13%;
+    top: 8.5%;
+}
+
+.nav-x a {
+    color: #ffffff;
+}
+
+.nav-x a i {
+    font-size: 26px;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+.nav-text {
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-text a {
+    margin: auto;
+    margin-top: 12px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* sns */
+.nav-sns {
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-sns .btn-circle {
+    width: 60px;
+    height: 60px;
+
+    margin: 3px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.nav-sns img {
+    height: 50%;
+    margin: auto;
+}
+
+/* loading ------------------------------------*/
+
+#loading {
+    /* width: 100%;
+    height: 100%;
+    display: flex; */
+
+    width: 0;
+    height: 0;
+    display: none;
+
+    background-color: #0092dd;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4000;
+
+    /* transition: all 1s; */
+}
+
+.instagram-delay {
+    animation-delay: 1.2s;
+}
+
+/* fadeIn その場でふわっ ------------------------- */
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.text-logo {
+    animation-name: fadeInAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+/* fadeUp ふわっとアニメーション */
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        /* transform: translateY(100px); */
+        transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* @-webkit-keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0);
+    }
+}
+
+.fadeUp {
+    -webkit-animation-name: fadeUpAnime;
+    animation-name: fadeUpAnime;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+} */
+
+/* fadeUp for Description Circles ふわっとアニメーション */
+@keyframes fadeUpCircAnime {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.fadeUpCirc {
+    animation-name: fadeUpCircAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* 左から */
+@keyframes fadeLeftAnime {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeLeft {
+    animation-name: fadeLeftAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* 右から */
+@keyframes fadeRightAnime {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeRight {
+    animation-name: fadeRightAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* overlay nav animation */
+@keyframes fadeUpNav {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDownNav {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+
+.nav-overlay-content {
+    animation-name: fadeUpNav;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* media ------------------------------------------ */
+@media (max-width: 414px) {
+    @keyframes moveAnimation {
+        0% {
+            width: 0;
+            left: 300px;
+            transform: rotate(0);
+            opacity: 1;
+        }
+        15% {
+            width: 50px;
+            left: 300px;
+            transform: rotate(20deg);
+            opacity: 1;
+        }
+        30% {
+            width: 50px;
+            left: 200px;
+            transform: rotate(40deg);
+            opacity: 1;
+        }
+        45% {
+            width: 50px;
+            left: 100px;
+            transform: rotate(60deg);
+            opacity: 1;
+        }
+        60% {
+            width: 50px;
+            left: 25px;
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+        75% {
+            width: 50px;
+            left: 25px;
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            width: 50px;
+            left: 25px;
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+    }
+
+    #loading img {
+        position: absolute;
+        top: 40px;
+        left: 25px;
+        z-index: 5000;
+
+        /* width: 0px; */
+        /* animation: moveAnimation 2s linear forwards; */
+        /* animation-delay: 2s; */
+    }
+
+    /* title i jump */
+    @keyframes jumpUp {
+        0% {
+            opacity: 1;
+            transform: translateY(-30%);
+        }
+        20% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        60% {
+            opacity: 1;
+            transform: translateY(-30%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .jumpLogo {
+        animation-name: jumpUp;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        /* opacity: 0; */
+    }
+}
+
+@media (min-width: 415px) {
+    @keyframes moveAnimation {
+        0% {
+            width: 0;
+            left: 300px;
+            transform: rotate(0);
+            opacity: 1;
+        }
+        15% {
+            width: 60px;
+            left: 300px;
+            transform: rotate(20deg);
+            opacity: 1;
+        }
+        30% {
+            width: 60px;
+            left: 200px;
+            transform: rotate(40deg);
+            opacity: 1;
+        }
+        45% {
+            width: 60px;
+            left: 100px;
+            transform: rotate(60deg);
+            opacity: 1;
+        }
+        60% {
+            width: 60px;
+            left: 25px;
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+        75% {
+            width: 60px;
+            left: 25px;
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            width: 60px;
+            left: 25px;
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+    }
+
+    #loading img {
+        position: absolute;
+        top: 40px;
+        left: 25px;
+        z-index: 5000;
+    }
+}
