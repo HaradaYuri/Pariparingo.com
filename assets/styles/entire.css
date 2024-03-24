@@ -25,7 +25,7 @@
 }
 
 .nav-overlay-content {
-    width: 80%;
+    width: 90%;
     max-width: 330px;
     height: 450px;
     margin: auto;
@@ -86,7 +86,7 @@
 .nav-text {
     margin: auto;
     margin-bottom: 10px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 
     display: flex;
     flex-direction: column;
@@ -196,28 +196,6 @@
     animation-fill-mode: forwards;
     opacity: 0;
 }
-
-/* @-webkit-keyframes fadeUpAnime {
-    from {
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        visibility: visible;
-        -webkit-transform: translateY(0);
-    }
-}
-
-.fadeUp {
-    -webkit-animation-name: fadeUpAnime;
-    animation-name: fadeUpAnime;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-} */
 
 /* fadeUp for Description Circles ふわっとアニメーション */
 @keyframes fadeUpCircAnime {
