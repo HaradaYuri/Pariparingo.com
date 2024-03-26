@@ -371,8 +371,8 @@ i {
     z-index: 1000;
     cursor: pointer; /*マウスカーソルを指マークに*/
     outline: none; /*クリックをしたら出てくる枠線を消す*/
-    border-top: 4px solid #0092dd; /*矢印の色*/
-    border-right: 4px solid #0092dd; /*矢印の色*/
+    border-top: 4px solid #ffbe00; /*矢印の色*/
+    border-right: 4px solid #ffbe00; /*矢印の色*/
     height: 13px;
     width: 13px;
 }
@@ -409,14 +409,14 @@ i {
     display: block;
     border-radius: 50%;
 
-    border: 1px solid #0092dd;
+    border: 2px solid #ffbe00;
     /* KEY POINT */
 
     background: #fffef0; /*ドットボタンの色*/
 }
 
 .slick-dots .slick-active button {
-    background: #0092dd; /*ドットボタンの現在地表示の色*/
+    background: #ffbe00; /*ドットボタンの現在地表示の色*/
 }
 
 /* des-btn */
