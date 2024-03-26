@@ -31,11 +31,7 @@ $(document).ready(function () {
         });
     }
 
-    // $(document).ready(function () {
-    //     setTimeout(function () {
-    //         end_loader();
-    //     }, 1200);
-    // });
+
 
     // fadeTrigger
     function fadeAnime() {
@@ -167,80 +163,18 @@ $(document).ready(function () {
         // $(".nav-overlay").css("width", "0%");
     });
 
-    //flavorSlider
-    //flavorSlider auto slide
-    function autoSlide() {
-        interval = setInterval(function () {
-            moveRight();
-        }, 5000);
-    }
-
-    autoSlide();
-
-    var startX;
-    var distance;
-
-    // タッチ開始時の位置を取得
-    $("#flavorSlider").on("touchstart", function (e) {
-        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-        startX = touch.pageX;
-    });
-
-    function setActiveItem() {
-        $(".slider-item").removeClass("active");
-        // 中央の要素を取得して.activeを追加
-        $(".slider-item").eq(2).addClass("active");
-    }
-
-    // 初期状態で.activeを設定
-    setActiveItem();
-
-    // var sliderWidth = $("#flavorContent").width();
-    var sliderWidth = $("#flavorSlider ul li").width();
-    var sliderHeight = $("#flavorSlider ul li").height();
-    var sliderCount = $("#flavorSlider ul li").length;
-
-    function moveLeft() {
-        $("#flavorSlider ul").animate(
-            {
-                left: sliderWidth,
-            },
-            500,
-            function () {
-                $("#flavorSlider ul li").last().prependTo("#flavorSlider ul");
-                $("#flavorSlider ul").css("left", "0");
-                setActiveItem();
-            }
-        );
-    }
-
-    function moveRight() {
-        $("#flavorSlider ul").animate(
-            {
-                left: -sliderWidth,
-            },
-            500,
-            function () {
-                $("#flavorSlider ul li").first().appendTo("#flavorSlider ul");
-                $("#flavorSlider ul").css("left", "0");
-                setActiveItem();
-            }
-        );
-    }
-
-    // タッチ終了時の位置を取得し、タッチ開始時の位置との差を計算
-    $("#flavorSlider").on("touchend", function (e) {
-        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-        distance = touch.pageX - startX;
-
-        // 左にスワイプした場合
-        if (distance < -50) {
-            moveRight();
-        }
-        // 右にスワイプした場合
-        else if (distance > 50) {
-            moveLeft();
-        }
+    // slider slick
+    $(".slider").slick({
+        autoplay: true, //自動的に動き出すか。初期値はfalse。
+        infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+        speed: 500, //スライドのスピード。初期値は300。
+        slidesToShow: 3, //スライドを画面に3枚見せる
+        slidesToScroll: 1, //1回のスクロールで1枚の写真を移動して見せる
+        prevArrow: '<div class="slick-prev"></div>', //矢印部分PreviewのHTMLを変更
+        nextArrow: '<div class="slick-next"></div>', //矢印部分NextのHTMLを変更
+        centerMode: true, //要素を中央ぞろえにする
+        variableWidth: true, //幅の違う画像の高さを揃えて表示
+        dots: true, //下部ドットナビゲーションの表示
     });
 });
 

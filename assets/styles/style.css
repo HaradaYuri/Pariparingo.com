@@ -28,34 +28,7 @@ li,
 a {
     text-decoration: none;
     list-style: none;
-    /* color: #655d55; */
 }
-
-/* button {
-    border: none;
-    background: none;
-    display: inline-block;
-}
-
-button a {
-    background-color: #4f7c3a;
-    color: white;
-    padding: 25px 35px;
-    font-size: 26px;
-    text-transform: capitalize;
-    transition: 0.1s;
-}
-
-button a:hover {
-    background: rgba(255, 255, 255, 0.649);
-    border: 4px solid #4f7c3a;
-    color: #4f7c3a;
-    cursor: pointer;
-}
-
-button a:hover i {
-    color: #4f7c3a;
-} */
 
 /* 丸いボタン */
 .btn-circle {
@@ -81,8 +54,7 @@ button a:hover i {
     background-color: #ffffff;
     border-radius: 50px;
 
-    margin: auto;
-    margin-top: 20px;
+    margin: 4% auto;
 }
 
 .flavor-btn a,
@@ -226,17 +198,6 @@ i {
     position: relative;
 }
 
-/* .home-back-color {
-    width: 100%;
-    height: 166.66vw;
-
-    position: absolute;
-    top: 0;
-    z-index: -1000;
-
-    background-color: #0092dd;
-} */
-
 .home-content {
     width: 85%;
     height: 600px;
@@ -261,12 +222,6 @@ i {
     width: 100%;
     filter: drop-shadow(1px 3px 10px rgba(0, 0, 0, 0.4));
 }
-
-/* .btn-calendar {
-    position: absolute;
-    top: 50px;
-    right: 65px;
-} */
 
 .btn-instagram {
     width: 38px;
@@ -465,26 +420,7 @@ i {
 
 .content-header h3 {
     font-size: 24px;
-    /* margin-left: 2%; */
 }
-
-/* .flavor-container .content-header h3 {
-    font-size: 16px;
-    margin-left: 10%;
-}
-
-.point-container .content-header h3 {
-    font-size: 16px;
-    margin-left: 0;
-} */
-
-/* .flavor-container i.fa-apple-whole::before {
-    font-size: 45px;
-}
-
-.about-container i.fa-hand-point-up::before {
-    font-size: 43px;
-} */
 
 /* ----------------------------------------------- */
 
@@ -500,9 +436,9 @@ i {
 
 .shop-content {
     width: 85%;
-    height: 500px;
+    height: 530px;
     margin: auto;
-    padding: 7% 0 3.5%;
+    padding: 8% 0 4%;
 
     /* background-color: #e12e2a; */
     background-color: #ed1b24;
@@ -520,7 +456,7 @@ i {
     width: 85%;
     height: 200px;
 
-    margin: auto;
+    margin: 5% auto;
 
     border-radius: 100px;
     overflow: hidden;
@@ -565,9 +501,9 @@ i {
 
 .flavor-content {
     width: 85%;
-    height: 500px;
+    height: 530px;
     margin: auto;
-    /* padding: 9% 0 3.5%; */
+    padding: 4% 0 4%;
 
     background-color: #0092dd;
     border: 7px solid #ffffff;
@@ -578,44 +514,95 @@ i {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 
     overflow: hidden;
 }
 
 /* slider */
+
+.flavor-txt {
+    color: #ffffff;
+    font-size: 15px;
+
+    margin-top: 14%;
+}
+
+/* slider slick */
 #flavorSlider {
-    /* width: 100%; */
-    margin-top: 95px;
-    margin-bottom: 20px;
-
-    position: relative;
+    width: 100%;
+    margin-top: 5%;
 }
 
-#flavorSlider ul {
-    /* height: 340px; */
-    position: relative;
-    white-space: nowrap;
-    display: flex;
-    /*KEY POINT*/
+.slider {
+    /*横幅94%で左右に余白を持たせて中央寄せ*/
+    /* width: 94%; */
+    margin: 0 auto;
 }
 
-#flavorSlider ul li {
-    width: 58vw;
-    max-width: 240px;
-    height: 255px;
-    /* padding: 7px 0 7px; */
-    margin: auto;
+.slider li {
+    width: 60vw; /*スライダー内の画像を60vwにしてレスポンシブ化*/
+    max-width: 250px;
 
     border-radius: 80px;
-
-    display: block;
-    float: left;
-    margin-right: 17px;
-    margin-left: 17px;
-
-    position: relative;
     overflow: hidden;
+}
+
+.slider img {
+    width: 107%;
+    height: 270px;
+
+    object-fit: cover;
+    object-position: -10px 0px;
+}
+
+.slider .slick-slide {
+    transform: scale(0.8); /*左右の画像のサイズを80%に*/
+    transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
+    opacity: 0.5; /*透過50%*/
+}
+
+.slider .slick-slide.slick-center {
+    transform: scale(1); /*中央の画像のサイズだけ等倍に*/
+    opacity: 1; /*透過なし*/
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+    /* display: none; */
+
+    position: absolute; /*絶対配置にする*/
+    z-index: 1000;
+    top: 46%;
+    cursor: pointer; /*マウスカーソルを指マークに*/
+    outline: none; /*クリックをしたら出てくる枠線を消す*/
+    border-top: 4px solid #ffffff; /*矢印の色*/
+    border-right: 4px solid #ffffff; /*矢印の色*/
+    height: 14px;
+    width: 14px;
+}
+
+.slick-prev {
+    /*戻る矢印の位置と形状*/
+    left: 6%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    /*次へ矢印の位置と形状*/
+    right: 6%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+.slick-dots {
+    display: none;
+}
+.slick-dots button {
+    display: none;
 }
 
 .slider-item1 {
@@ -625,7 +612,6 @@ i {
     border: 7px solid #a0941c;
 }
 .slider-item3 {
-    /* border: 7px solid #c7472d; */
     border: 7px solid #ed1b24;
 }
 .slider-item4 {
@@ -634,47 +620,6 @@ i {
 .slider-item5 {
     border: 7px solid #9a723e;
 }
-
-.slider-item {
-    transition: transform 0.5s ease;
-}
-
-.slider-item.active {
-    transform: scale(1.2);
-}
-
-#flavorSlider ul li img {
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
-    object-position: center;
-
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-/* dot navigation */
-/* .dot-navigation {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.dot {
-    height: 8px;
-    width: 8px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: 30px;
-    margin-right: 2px;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
-}
-*/
 
 .flavor-btn {
     display: flex;
@@ -797,9 +742,9 @@ i {
 
 .point-content {
     width: 85%;
-    height: 500px;
+    height: 530px;
     margin: auto;
-    padding: 7% 0 3%;
+    padding: 8% 0 4%;
 
     background-color: #ed1b24;
     /* background-color: #f1464c; */
@@ -873,9 +818,9 @@ i {
 
 .about-content {
     width: 85%;
-    height: 500px;
+    height: 530px;
     margin: auto;
-    padding: 7% 0 3%;
+    padding: 8% 0 4%;
 
     /* background-color: #347e4f; */
     /* background-color: #ed1b24; */
@@ -893,7 +838,7 @@ i {
     width: 85%;
     height: 200px;
 
-    margin: auto;
+    margin: 4% auto;
 
     border-radius: 100px;
     overflow: hidden;
@@ -919,33 +864,6 @@ i {
 .about-text p {
     margin-top: 8px;
 }
-
-/* .about-btn {
-    margin: auto;
-    margin-top: 20px;
-    padding: 0 4.4%;
-
-    display: flex;
-    align-items: center;
-
-    background-color: #ffffff;
-    border-radius: 50px;
-}
-
-.about-btn a {
-    width: 100%;
-    margin: auto;
-
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #0092dd;
-    font-size: 16px;
-}
-
-.about-btn .fa-circle-play {
-    margin: 3.5%;
-} */
 
 /* footer */
 footer {
