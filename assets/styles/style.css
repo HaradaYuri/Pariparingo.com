@@ -503,7 +503,7 @@ i {
     width: 85%;
     height: 530px;
     margin: auto;
-    padding: 4% 0 4%;
+    padding: 4% 0 3%;
 
     background-color: #0092dd;
     border: 7px solid #ffffff;
@@ -514,18 +514,22 @@ i {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 
     overflow: hidden;
 }
 
 /* slider */
 
-.flavor-txt {
+.flavor-txt,
+.flavor-txt2 {
     color: #ffffff;
     font-size: 15px;
+    line-height: 20px;
+}
 
-    margin-top: 14%;
+.flavor-txt {
+    margin-top: 18%;
 }
 
 /* slider slick */
@@ -550,10 +554,10 @@ i {
 
 .slider img {
     width: 107%;
-    height: 270px;
+    height: 260px;
 
     object-fit: cover;
-    object-position: -10px 0px;
+    object-position: -10px -5px;
 }
 
 .slider .slick-slide {
@@ -622,8 +626,9 @@ i {
 }
 
 .flavor-btn {
-    display: flex;
+    height: 140px;
     margin-top: 20px;
+    display: flex;
 
     background-color: #ffffff;
     border-radius: 50px;
