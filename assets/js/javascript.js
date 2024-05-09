@@ -31,8 +31,6 @@ $(document).ready(function () {
         });
     }
 
-
-
     // fadeTrigger
     function fadeAnime() {
         // 関数レベルの厳格モード構文
@@ -128,20 +126,6 @@ $(document).ready(function () {
     $(window).on("load", function () {
         fadeAnime(); /* アニメーション用の関数を呼ぶ*/
     }); // ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-
-    // smooth scroll
-    $(".smooth-scroll").click(function (event) {
-        event.preventDefault(); // デフォルトのアクション（即座にジャンプする）をキャンセル
-        var target = this.hash ? $(this.hash) : $("html"); // ハッシュ（#以降の部分）が存在する場合と、存在しない（#のみ）場合で処理を分ける
-
-        // スムーズにスクロールするアニメーション
-        $("html, body").animate(
-            {
-                scrollTop: target.offset().top,
-            },
-            400
-        ); // 800ミリ秒（0.8秒）かけてスクロール
-    });
 
     //overlay nav
     //open
