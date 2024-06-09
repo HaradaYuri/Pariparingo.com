@@ -1,422 +1,516 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <!-- Google analytics -->
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-58217XSEL2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+  <head>
+    <!-- Google analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-58217XSEL2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-            gtag("config", "G-58217XSEL2");
-        </script>
+      gtag('config', 'G-58217XSEL2');
+    </script>
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ぱりぱりんご | 成田のりんご飴専門店</title>
-        <meta
-            name="description"
-            content="ぱりぱりんごは、成田を愛する夫婦が始めた成田のりんご飴専門店です。こだわりのりんごを使って一つ一つ丁寧に作っています。" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ぱりぱりんご | 成田のりんご飴専門店</title>
+    <meta
+      name="description"
+      content="ぱりぱりんごは、成田を愛する夫婦が始めた成田のりんご飴専門店です。こだわりのりんごを使って一つ一つ丁寧に作っています。"
+    />
 
-        <!-- OGP (Open Graph Protocol) -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="ぱりぱりんご | 成田のりんご飴専門店" />
-        <meta
-            property="og:description"
-            content="ぱりぱりんごは、成田を愛する夫婦が始めた成田のりんご飴専門店です。こだわりのりんごを使って一つ一つ丁寧に作っています。" />
-        <meta property="og:url" content="https://pariparingo.com" />
-        <meta property="og:image" content="https://pariparingo.com/assets/images/ogp-img.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+    <!-- OGP (Open Graph Protocol) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ぱりぱりんご | 成田のりんご飴専門店" />
+    <meta
+      property="og:description"
+      content="ぱりぱりんごは、成田を愛する夫婦が始めた成田のりんご飴専門店です。こだわりのりんごを使って一つ一つ丁寧に作っています。"
+    />
+    <meta property="og:url" content="https://pariparingo.com" />
+    <meta
+      property="og:image"
+      content="https://pariparingo.com/assets/images/ogp-img.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-        <link rel="stylesheet" href="assets/styles/slick.css" />
-        <link rel="stylesheet" href="assets/styles/style.css" />
-        <link rel="stylesheet" href="assets/styles/entire.css" />
+    <link rel="stylesheet" href="assets/styles/slick.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/entire.css" />
 
-        <!-- favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-180x180.png" sizes="180x180" />
-        <link rel="icon" type="image/png" href="assets/images/android-chrome-192x192.png" sizes="192x192" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/images/apple-touch-icon-180x180.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/android-chrome-192x192.png"
+      sizes="192x192"
+    />
 
-        <!-- google search console -->
-        <meta name="google-site-verification" content="kBLxY04WArtjMfamWSwGLwZDWlq1_dy4fQDN_D_lMR8" />
-    </head>
-    <body>
-        <div class="body-container">
-            <!-- loading page -->
-            <div class="loading-container" id="loading">
+    <!-- google search console -->
+    <meta
+      name="google-site-verification"
+      content="kBLxY04WArtjMfamWSwGLwZDWlq1_dy4fQDN_D_lMR8"
+    />
+  </head>
+  <body>
+    <div class="body-container">
+      <!-- loading page -->
+      <div class="loading-container" id="loading">
+        <img src="assets/images/main-logo.png" alt="ぱりぱりんご" />
+      </div>
+
+      <!-- fixed nav for pc -->
+      <div class="nav-pc mobile-none">
+        <div class="nav-text">
+          <a href="#" class="smooth-scroll">ホーム</a>
+          <a href="#shop" class="smooth-scroll">出店情報</a>
+          <a href="#flavor" class="smooth-scroll">商品一覧</a>
+          <a href="#point" class="smooth-scroll">LINEポイント</a>
+          <a href="#about" class="smooth-scroll">こだわり</a>
+          <a href="contact.html">お問い合わせ</a>
+          <a href="design.html">HP制作依頼</a>
+        </div>
+      </div>
+
+      <!-- sns for pc -->
+      <div class="sns-pc mobile-none">
+        <a href="https://lin.ee/90ANhKX" class="btn-circle">
+          <!-- <i class="fa-brands fa-line"></i> -->
+          <img src="assets/images/LINE_Brand_icon.png" alt="" />
+        </a>
+        <a href="https://instagram.com/pariparingo.narita" class="btn-circle">
+          <!-- <i class="fa-brands fa-instagram"></i> -->
+          <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
+        </a>
+        <a href="https://www.tiktok.com/@pariparingo" class="btn-circle">
+          <!-- <i class="fa-brands fa-tiktok"></i> -->
+          <img src="assets/images/tiktok-secondary-logo.png" alt="" />
+        </a>
+      </div>
+
+      <!-- design for pc -->
+      <div class="design-pc mobile-none">
+        <img src="assets/images/circle1-pc.png" alt="" class="circle1" />
+        <img src="assets/images/circle2-pc.png" alt="" class="circle2" />
+
+        <img src="assets/images/candy1-pc.png" alt="" class="candy1" />
+        <img src="assets/images/candy2-pc.png" alt="" class="candy2" />
+      </div>
+
+      <!-- overlay -->
+      <section class="nav-overlay navClose">
+        <div class="nav-overlay-content">
+          <div class="nav-logo">
+            <img src="assets/images/main-logo.png" alt="" />
+          </div>
+
+          <div class="nav-x">
+            <a href="javascript:void(0)" class="navClose" id="navClose">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+          </div>
+
+          <div class="nav-text">
+            <a href="#" class="smooth-scroll">ホーム</a>
+            <a href="#shop" class="smooth-scroll">出店情報</a>
+            <a href="flavor.html">商品一覧</a>
+            <a href="#point" class="smooth-scroll">LINEポイント</a>
+            <a href="about.html">こだわり</a>
+            <a href="contact.html">お問い合わせ</a>
+            <a href="design.html">HP制作依頼</a>
+          </div>
+
+          <div class="nav-sns">
+            <a href="https://lin.ee/90ANhKX" class="btn-circle">
+              <!-- <i class="fa-brands fa-line"></i> -->
+              <img src="assets/images/LINE_Brand_icon.png" alt="" />
+            </a>
+            <a
+              href="https://instagram.com/pariparingo.narita"
+              class="btn-circle"
+            >
+              <!-- <i class="fa-brands fa-instagram"></i> -->
+              <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
+            </a>
+            <a href="https://www.tiktok.com/@pariparingo" class="btn-circle">
+              <!-- <i class="fa-brands fa-tiktok"></i> -->
+              <img src="assets/images/tiktok-secondary-logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- fixed-nav -->
+      <section class="nav-fixed">
+        <ul class="nav-fixed-ul">
+          <li class="li-radius">
+            <a href="#shop" class="smooth-scroll">
+              <i class="fa-solid fa-store"></i>
+              出店情報
+            </a>
+          </li>
+          <li>
+            <a href="#flavor" class="smooth-scroll">
+              <i class="fa-solid fa-apple-whole"></i>
+              商品一覧
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="smooth-scroll">
+              <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+              <i class="fa-solid fa-hand-point-up fa-flip-horizontal"></i>
+              こだわり
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-white" id="navOpen">
+              <i class="fa-solid fa-bars"></i>
+              <span>メニュー</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="container">
+        <!-- home -->
+        <section class="home-container" id="home">
+          <div class="home-content">
+            <!-- home icons -->
+            <a href="#" class="main-logo">
+              <h1>
                 <img src="assets/images/main-logo.png" alt="ぱりぱりんご" />
-            </div>
+              </h1>
+            </a>
 
-            <!-- fixed nav for pc -->
-            <div class="nav-pc mobile-none">
-                <div class="nav-text">
-                    <a href="#" class="smooth-scroll">ホーム</a>
-                    <a href="#shop" class="smooth-scroll">出店情報</a>
-                    <a href="#flavor" class="smooth-scroll">商品一覧</a>
-                    <a href="#point" class="smooth-scroll">LINEポイント</a>
-                    <a href="#about" class="smooth-scroll">こだわり</a>
-                    <a href="contact.html">お問い合わせ</a>
-                    <a href="design.html">HP制作依頼</a>
-                </div>
-            </div>
-
-            <!-- sns for pc -->
-            <div class="sns-pc mobile-none">
-                <a href="https://lin.ee/90ANhKX" class="btn-circle">
-                    <!-- <i class="fa-brands fa-line"></i> -->
-                    <img src="assets/images/LINE_Brand_icon.png" alt="" />
-                </a>
-                <a href="https://instagram.com/pariparingo.narita" class="btn-circle">
-                    <!-- <i class="fa-brands fa-instagram"></i> -->
-                    <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
-                </a>
-                <a href="https://www.tiktok.com/@pariparingo" class="btn-circle">
-                    <!-- <i class="fa-brands fa-tiktok"></i> -->
-                    <img src="assets/images/tiktok-secondary-logo.png" alt="" />
-                </a>
-            </div>
-
-            <!-- design for pc -->
-            <div class="design-pc mobile-none">
-                <img src="assets/images/circle1-pc.png" alt="" class="circle1" />
-                <img src="assets/images/circle2-pc.png" alt="" class="circle2" />
-
-                <img src="assets/images/candy1-pc.png" alt="" class="candy1" />
-                <img src="assets/images/candy2-pc.png" alt="" class="candy2" />
-            </div>
-
-            <!-- overlay -->
-            <section class="nav-overlay navClose">
-                <div class="nav-overlay-content">
-                    <div class="nav-logo">
-                        <img src="assets/images/main-logo.png" alt="" />
-                    </div>
-
-                    <div class="nav-x">
-                        <a href="javascript:void(0)" class="navClose" id="navClose">
-                            <i class="fa-solid fa-xmark"></i>
-                        </a>
-                    </div>
-
-                    <div class="nav-text">
-                        <a href="#" class="smooth-scroll">ホーム</a>
-                        <a href="#shop" class="smooth-scroll">出店情報</a>
-                        <a href="flavor.html">商品一覧</a>
-                        <a href="#point" class="smooth-scroll">LINEポイント</a>
-                        <a href="about.html">こだわり</a>
-                        <a href="contact.html">お問い合わせ</a>
-                        <a href="design.html">HP制作依頼</a>
-                    </div>
-
-                    <div class="nav-sns">
-                        <a href="https://lin.ee/90ANhKX" class="btn-circle">
-                            <!-- <i class="fa-brands fa-line"></i> -->
-                            <img src="assets/images/LINE_Brand_icon.png" alt="" />
-                        </a>
-                        <a href="https://instagram.com/pariparingo.narita" class="btn-circle">
-                            <!-- <i class="fa-brands fa-instagram"></i> -->
-                            <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
-                        </a>
-                        <a href="https://www.tiktok.com/@pariparingo" class="btn-circle">
-                            <!-- <i class="fa-brands fa-tiktok"></i> -->
-                            <img src="assets/images/tiktok-secondary-logo.png" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- fixed-nav -->
-            <section class="nav-fixed">
-                <ul class="nav-fixed-ul">
-                    <li class="li-radius">
-                        <a href="#shop" class="smooth-scroll">
-                            <i class="fa-solid fa-store"></i>
-                            出店情報
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#flavor" class="smooth-scroll">
-                            <i class="fa-solid fa-apple-whole"></i>
-                            商品一覧
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about" class="smooth-scroll">
-                            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                            <i class="fa-solid fa-hand-point-up fa-flip-horizontal"></i>
-                            こだわり
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-white" id="navOpen">
-                            <i class="fa-solid fa-bars"></i>
-                            <span>メニュー</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <div class="container">
-                <!-- home -->
-                <section class="home-container" id="home">
-                    <div class="home-content">
-                        <!-- home icons -->
-                        <a href="#" class="main-logo">
-                            <h1>
-                                <img src="assets/images/main-logo.png" alt="ぱりぱりんご" />
-                            </h1>
-                        </a>
-
-                        <!-- <a href="" class="btn-circle btn-calendar">
+            <!-- <a href="" class="btn-circle btn-calendar">
                             <i class="fa-solid fa-calendar-days"></i>
                         </a> -->
 
-                        <a href="https://instagram.com/pariparingo.narita" class="btn-circle btn-instagram index-instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
+            <a
+              href="https://instagram.com/pariparingo.narita"
+              class="btn-circle btn-instagram index-instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
 
-                        <div class="text-logo">
-                            <img src="assets/images/home-logo-text.png" alt="" class="fadeInTrigger" />
-                        </div>
-                    </div>
-                </section>
+            <div class="text-logo">
+              <img
+                src="assets/images/home-logo-text.png"
+                alt=""
+                class="fadeInTrigger"
+              />
+            </div>
+          </div>
+        </section>
 
-                <!-- description -->
-                <section class="description-container">
-                    <div class="description-content">
-                        <p class="fadeInTrigger">
-                            ぱりぱりんごは <br />
-                            成田を愛する夫婦が始めた<br />
-                            成田のりんご飴専門店です。<br />
-                            こだわりのりんごを使って<br />
-                            一つ一つ丁寧に作っています。<br />
-                        </p>
+        <!-- description -->
+        <section class="description-container">
+          <div class="description-content">
+            <p class="fadeInTrigger">
+              ぱりぱりんごは <br />
+              成田を愛する夫婦が始めた<br />
+              成田のりんご飴専門店です。<br />
+              こだわりのりんごを使って<br />
+              一つ一つ丁寧に作っています。<br />
+            </p>
 
-                        <div class="description-img">
-                            <img src="assets/images/main-logo.png" alt="" id="zoomable-image" />
-                        </div>
+            <div class="description-img">
+              <img
+                src="assets/images/main-logo.png"
+                alt=""
+                id="zoomable-image"
+              />
+            </div>
 
-                        <div class="desc-circle1 fadeUpCircTrigger"></div>
-                        <div class="desc-circle2 fadeUpCircTrigger"></div>
-                        <div class="desc-circle3 fadeUpCircTrigger"></div>
-                        <div class="desc-circle4 fadeUpCircTrigger"></div>
-                    </div>
-                </section>
+            <div class="desc-circle1 fadeUpCircTrigger"></div>
+            <div class="desc-circle2 fadeUpCircTrigger"></div>
+            <div class="desc-circle3 fadeUpCircTrigger"></div>
+            <div class="desc-circle4 fadeUpCircTrigger"></div>
+          </div>
+        </section>
 
-                <!-- shop -->
-                <section class="shop-container fadeUpTrigger" id="shop">
-                    <div class="shop-content">
-                        <div class="shop-header content-header">
-                            <div class="shop-header-logo">
-                                <i class="fa-solid fa-store"></i>
-                            </div>
-                            <div class="shop-header-text">
-                                <h2>shop</h2>
-                                <h3>出店情報</h3>
-                            </div>
-                        </div>
-                        <div class="shop-img">
-                            <img src="assets/images/shop-img.JPG" alt="" />
-                        </div>
-                        <div class="shop-text">
-                            <p>
-                                ぱりぱりんごは固定店舗を持たずに、成田と印西を中心に期間限定で出店しています。土日祝日を中心にイオンモールや成田参道に出店します！
-                            </p>
-                            <h4>
-                                毎月LINEで出店情報を<br />
-                                \　　配信しています！ 　/
-                            </h4>
-                        </div>
-                        <div class="shop-btn">
-                            <a href="https://lin.ee/90ANhKX" class="btn-circle">
-                                <!-- <i class="fa-brands fa-line"></i> -->
-                                <img src="assets/images/LINE_Brand_icon.png" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                </section>
+        <!-- 固定店舗 -->
+        <section class="fshop-container fadeUpTrigger" id="fshop">
+          <div class="fshop-content">
+            <div class="fshop-header content-header">
+              <div class="fshop-header-logo">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div class="fshop-header-text">
+                <h2>shop</h2>
+                <h3>イオン成田店</h3>
+              </div>
+            </div>
+            <div class="fshop-img">
+              <img src="assets/images/shop-narita.JPG" alt="" />
+            </div>
+            <div class="fshop-text">
+              <h4>毎日営業 10:30〜18:30</h4>
+              <p>成田の固定店舗は、年中無休です。</p>
+              <p>
+                〒286-0029<br />
+                千葉県成田市ウィング土屋24 1F<br />
+                ぱりぱりんごイオン成田店
+              </p>
+            </div>
 
-                <!-- flavor -->
-                <section class="flavor-container fadeUpTrigger" id="flavor">
-                    <div class="flavor-content" id="flavorContent">
-                        <div class="flavor-header content-header">
-                            <div class="flavor-header-logo">
-                                <i class="fa-solid fa-apple-whole"></i>
-                            </div>
-                            <div class="flavor-header-text">
-                                <h2>flavor</h2>
-                                <h3>商品一覧</h3>
-                            </div>
-                        </div>
+            <div class="fshop-btn">
+              <a
+                href="https://maps.app.goo.gl/4jADeRkRaGo96WuH8"
+                class="btn-circle"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                マップを確認
+                <i class="fa-solid fa-location-dot"></i>
+              </a>
+            </div>
+          </div>
+        </section>
 
-                        <p class="flavor-txt">期間限定フレーバーは</p>
-                        <p class="flavor-txt2">\ 　Instagramで発信中！ /</p>
+        <!-- shop -->
+        <section class="shop-container fadeUpTrigger" id="shop">
+          <div class="shop-content">
+            <div class="shop-header content-header">
+              <div class="shop-header-logo">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div class="shop-header-text">
+                <h2>shop</h2>
+                <h3>催事出店</h3>
+              </div>
+            </div>
+            <div class="shop-img">
+              <img src="assets/images/shop-img.JPG" alt="" />
+            </div>
+            <div class="shop-text">
+              <p>
+                祇園際や年末年始に成田参道に出店したり、イオンモール千葉NTに期間限定で催事出店をしたりしています。
+              </p>
+              <h4>
+                毎月LINEとInstagramで<br />
+                \　出店情報を配信しています！ /
+              </h4>
+            </div>
+            <div class="shop-btn">
+              <a href="https://lin.ee/90ANhKX" class="btn-circle">
+                <img src="assets/images/LINE_Brand_icon.png" alt="" />
+              </a>
+              <a href="https://instagram.com/pariparingo.narita" class="btn-circle">
+                <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
+              </a>
+            </div>
+        </section>
 
-                        <!-- slider -->
-                        <div class="flavor-slider" id="flavorSlider">
-                            <ul class="slider">
-                                <li class="slider-item slider-item1">
-                                    <a href="flavor.html"><img src="assets/images/whole-cut-cocoa.png" alt="" /></a>
-                                </li>
-                                <li class="slider-item slider-item2">
-                                    <a href="flavor.html"><img src="assets/images/whole-cut-matcha.png" alt="" /></a>
-                                </li>
-                                <li class="slider-item slider-item3">
-                                    <a href="flavor.html"><img src="assets/images/whole-cut-plane-2.png" alt="" /></a>
-                                </li>
-                                <li class="slider-item slider-item4">
-                                    <a href="flavor.html"><img src="assets/images/whole-cut-cinnamon.png" alt="" /></a>
-                                </li>
-                                <li class="slider-item slider-item5">
-                                    <a href="flavor.html"><img src="assets/images/whole-cut-earlgray.png" alt="" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flavor-btn">
-                            <a href="flavor.html">
-                                もっと見る
-                                <i class="fa-solid fa-circle-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+        <!-- flavor -->
+        <section class="flavor-container fadeUpTrigger" id="flavor">
+          <div class="flavor-content" id="flavorContent">
+            <div class="flavor-header content-header">
+              <div class="flavor-header-logo">
+                <i class="fa-solid fa-apple-whole"></i>
+              </div>
+              <div class="flavor-header-text">
+                <h2>flavor</h2>
+                <h3>商品一覧</h3>
+              </div>
+            </div>
 
-                <!-- news -->
-                <section class="news-container">
-                    <div id="marqueeContainer">
-                        <span id="marqueeText1">PARIPARING🍎 PARIPARINGO </span>
-                        <div class="news-content">
-                            <div class="news-text fadeInTrigger">
-                                <h4>\ 最新情報はInstagramをチェック /</h4>
-                            </div>
-                            <div class="news-btn">
-                                <a href="https://instagram.com/pariparingo.narita" class="btn-circle">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
+            <p class="flavor-txt">期間限定フレーバーは</p>
+            <p class="flavor-txt2">\ 　Instagramで発信中！ /</p>
 
-                        <span id="marqueeText2">PARIPARING🍏 PARIPARINGO </span>
-                    </div>
-                </section>
+            <!-- slider -->
+            <div class="flavor-slider" id="flavorSlider">
+              <ul class="slider">
+                <li class="slider-item slider-item1">
+                  <a href="flavor.html"
+                    ><img src="assets/images/whole-cut-cocoa.png" alt=""
+                  /></a>
+                </li>
+                <li class="slider-item slider-item2">
+                  <a href="flavor.html"
+                    ><img src="assets/images/whole-cut-matcha.png" alt=""
+                  /></a>
+                </li>
+                <li class="slider-item slider-item3">
+                  <a href="flavor.html"
+                    ><img src="assets/images/whole-cut-plane-2.png" alt=""
+                  /></a>
+                </li>
+                <li class="slider-item slider-item4">
+                  <a href="flavor.html"
+                    ><img src="assets/images/whole-cut-cinnamon.png" alt=""
+                  /></a>
+                </li>
+                <li class="slider-item slider-item5">
+                  <a href="flavor.html"
+                    ><img src="assets/images/whole-cut-earlgray.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="flavor-btn">
+              <a href="flavor.html">
+                もっと見る
+                <i class="fa-solid fa-circle-play"></i>
+              </a>
+            </div>
+          </div>
+        </section>
 
-                <!-- point -->
-                <section class="point-container fadeUpTrigger" id="point">
-                    <div class="point-content">
-                        <div class="point-header content-header">
-                            <div class="point-header-logo">
-                                <i class="fa-solid fa-stamp"></i>
-                            </div>
-                            <div class="point-header-text">
-                                <h2>point</h2>
-                                <h3>ポイント</h3>
-                            </div>
-                        </div>
-                        <div class="point-img">
-                            <img src="assets/images/point-apple.JPG" alt="" />
-                        </div>
-                        <div class="point-text">
-                            <h4>10個貯まると1個無料！</h4>
-                            <p>
-                                公式LINEを追加するとお得なポイントが貯められるようになります。10個貯まるとりんご飴1個、20個貯まるとさらに特別なプレゼントが...
-                            </p>
-                            <h4>\　LINEの追加はこちらから！ /</h4>
-                        </div>
-                        <div class="point-btn">
-                            <a href="https://lin.ee/90ANhKX" class="btn-circle">
-                                <!-- <i class="fa-brands fa-line"></i> -->
-                                <img src="assets/images/LINE_Brand_icon.png" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                </section>
+        <!-- news -->
+        <section class="news-container">
+          <div id="marqueeContainer">
+            <span id="marqueeText1">PARIPARING🍎 PARIPARINGO </span>
+            <div class="news-content">
+              <div class="news-text fadeInTrigger">
+                <h4>\ 最新情報はInstagramをチェック /</h4>
+              </div>
+              <div class="news-btn">
+                <a
+                  href="https://instagram.com/pariparingo.narita"
+                  class="btn-circle"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
 
-                <!-- about -->
-                <section class="about-container fadeUpTrigger" id="about">
-                    <div class="about-content">
-                        <div class="about-header content-header">
-                            <div class="about-header-logo">
-                                <i class="fa-solid fa-hand-point-up fa-flip-horizontal"></i>
-                            </div>
-                            <div class="about-header-text">
-                                <h2>about</h2>
-                                <h3>こだわり</h3>
-                            </div>
-                        </div>
-                        <div class="about-img">
-                            <img src="assets/images/about-new.png" alt="" />
-                        </div>
-                        <div class="about-text">
-                            <h4>ぱりっ！じゅわっ！</h4>
-                            <p>
-                                今までとは違った新しいりんご飴のこだわりをご紹介します。こだわりのりんご飴は秘密がたくさん!?また私たちはりんごの芯を活用してフードロス削減にも取り組んでいます。
-                            </p>
-                        </div>
-                        <div class="about-btn btn-circle">
-                            <a href="about.html">
-                                もっと見る
-                                <i class="fa-solid fa-circle-play"></i>
-                                <!-- <i class="fa-solid fa-circle-chevron-right"></i> -->
-                            </a>
-                        </div>
-                    </div>
-                </section>
+            <span id="marqueeText2">PARIPARING🍏 PARIPARINGO </span>
+          </div>
+        </section>
 
-                <!-- footer -->
-                <footer>
-                    <div class="footer-content">
-                        <!-- <div class="footer-apple">
+        <!-- point -->
+        <section class="point-container fadeUpTrigger" id="point">
+          <div class="point-content">
+            <div class="point-header content-header">
+              <div class="point-header-logo">
+                <i class="fa-solid fa-stamp"></i>
+              </div>
+              <div class="point-header-text">
+                <h2>point</h2>
+                <h3>ポイント</h3>
+              </div>
+            </div>
+            <div class="point-img">
+              <img src="assets/images/point-apple.JPG" alt="" />
+            </div>
+            <div class="point-text">
+              <h4>10個貯まると1個無料！</h4>
+              <p>
+                公式LINEを追加するとお得なポイントが貯められるようになります。10個貯まるとりんご飴1個、20個貯まるとさらに特別なプレゼントが...
+              </p>
+              <h4>\　LINEの追加はこちらから！ /</h4>
+            </div>
+            <div class="point-btn">
+              <a href="https://lin.ee/90ANhKX" class="btn-circle">
+                <!-- <i class="fa-brands fa-line"></i> -->
+                <img src="assets/images/LINE_Brand_icon.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- about -->
+        <section class="about-container fadeUpTrigger" id="about">
+          <div class="about-content">
+            <div class="about-header content-header">
+              <div class="about-header-logo">
+                <i class="fa-solid fa-hand-point-up fa-flip-horizontal"></i>
+              </div>
+              <div class="about-header-text">
+                <h2>about</h2>
+                <h3>こだわり</h3>
+              </div>
+            </div>
+            <div class="about-img">
+              <img src="assets/images/about-new.png" alt="" />
+            </div>
+            <div class="about-text">
+              <h4>ぱりっ！じゅわっ！</h4>
+              <p>
+                今までとは違った新しいりんご飴のこだわりをご紹介します。こだわりのりんご飴は秘密がたくさん!?また私たちはりんごの芯を活用してフードロス削減にも取り組んでいます。
+              </p>
+            </div>
+            <div class="about-btn btn-circle">
+              <a href="about.html">
+                もっと見る
+                <i class="fa-solid fa-circle-play"></i>
+                <!-- <i class="fa-solid fa-circle-chevron-right"></i> -->
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+          <div class="footer-content">
+            <!-- <div class="footer-apple">
                             <img src="assets/images/footer-apple.png" alt="">
                         </div> -->
-                        <div class="footer-nav">
-                            <a href="#shop">
-                                <p>出店情報</p>
-                            </a>
-                            <a href="flavor.html">
-                                <p>商品一覧</p>
-                            </a>
-                            <a href="#point">
-                                <p>LINEポイント</p>
-                            </a>
-                            <a href="about.html">
-                                <p>こだわり</p>
-                            </a>
-                            <a href="design.html">
-                                <p>HP制作依頼</p>
-                            </a>
-                        </div>
-
-                        <div class="footer-title">
-                            <img src="assets/images/footer-title.png" alt="" />
-                        </div>
-
-                        <div class="contact-btn" id="contact">
-                            <a href="contact.html">
-                                お問い合わせはこちら
-                                <i class="fa-solid fa-circle-play"></i>
-                            </a>
-                        </div>
-
-                        <div class="footer-btn btn-circle">
-                            <a href="#">
-                                <i class="fa-regular fa-circle-up"></i>
-                            </a>
-                        </div>
-                    </div>
-                </footer>
+            <div class="footer-nav">
+              <a href="#shop">
+                <p>出店情報</p>
+              </a>
+              <a href="flavor.html">
+                <p>商品一覧</p>
+              </a>
+              <a href="#point">
+                <p>LINEポイント</p>
+              </a>
+              <a href="about.html">
+                <p>こだわり</p>
+              </a>
+              <a href="design.html">
+                <p>HP制作依頼</p>
+              </a>
             </div>
-        </div>
 
-        <!-- scripts -->
-        <script src="https://kit.fontawesome.com/bb1ec9ad9e.js" crossorigin="anonymous"></script>
+            <div class="footer-title">
+              <img src="assets/images/footer-title.png" alt="" />
+            </div>
 
-        <script src="assets/js/jquery.js"></script>
+            <div class="contact-btn" id="contact">
+              <a href="contact.html">
+                お問い合わせはこちら
+                <i class="fa-solid fa-circle-play"></i>
+              </a>
+            </div>
 
-        <script src="assets/js/slick.min.js"></script>
+            <div class="footer-btn btn-circle">
+              <a href="#">
+                <i class="fa-regular fa-circle-up"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
 
-        <script src="assets/js/javascript.js"></script>
-    </body>
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/bb1ec9ad9e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/javascript.js"></script>
+  </body>
 </html>
