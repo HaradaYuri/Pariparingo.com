@@ -297,6 +297,11 @@ i {
   text-align: center;
 }
 
+.top-text h4 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .top-text h4 i {
   font-size: 22px;
   margin: auto;
