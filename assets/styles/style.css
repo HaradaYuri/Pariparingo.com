@@ -486,18 +486,19 @@ i {
 }
 
 .fshop-btn a {
-  padding: 0 10%;
   margin: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  width: 160px;
+  width: 210px;
   color: #0092dd;
   font-size: 16px;
 }
 
-.fshop-btn i {
-  font-size: 24px;
+.fshop-btn img {
+  width: 28px;
+  height: auto;
 }
 
 /* shop */
