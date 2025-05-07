@@ -266,10 +266,7 @@ i {
 /* top text */
 .top-text {
   width: 100%;
-  /* height: 300px; */
   padding: 8% 10% 16%;
-  /* padding-bottom: 13%; */
-
   display: flex;
   flex-direction: column;
 
@@ -282,7 +279,6 @@ i {
 }
 
 .top-text p {
-  /* width: 80%; */
   margin: auto;
   font-size: 16px;
 }
@@ -330,6 +326,17 @@ i {
   width: 30px;
   height: 30px;
   margin: auto;
+}
+
+/* mail */
+.con-mail {
+  text-decoration: none;
+  font-style: normal;
+  text-align: center;
+  display: block;
+
+  color: #ffffff;
+  font-size: 18px;
 }
 
 /* contact form -------------------------------- */
@@ -383,7 +390,6 @@ i {
   width: 80px;
   height: 50px;
   margin: auto;
-  /* padding: 10px 15px; */
 
   background-color: #0092dd;
   color: #ffffff;
