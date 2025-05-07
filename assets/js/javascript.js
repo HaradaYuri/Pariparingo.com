@@ -31,6 +31,7 @@ $(document).ready(function () {
     'use strict';
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
+    $('.fadeUpTrigger').css('opacity', '0');
 
     $('.fadeInTrigger').each(function () {
       var elemPos = $(this).offset().top;

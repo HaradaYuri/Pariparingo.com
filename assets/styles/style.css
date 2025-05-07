@@ -80,27 +80,9 @@ i {
   font-size: 28px;
 }
 
-/* i.fa-line::before{
-    color: #06C755;
-} */
-
 /* for pc display none------------------ */
 .mobile-none {
   display: none;
-}
-
-/* animation opacity */
-
-.shop-container,
-.flavor-container,
-.point-container,
-.about-container,
-.desc-circle1,
-.desc-circle2,
-.desc-circle3,
-.desc-circle4,
-.news-text {
-  opacity: 0;
 }
 
 /* nav-fixed */
@@ -435,7 +417,7 @@ i {
   padding: 8% 0 4%;
 
   background-color: #0092dd;
-  /* ロゴの赤 */
+  background-color: #ed1b24;
   border: 7px solid #ffffff;
   border-radius: 40px;
 
@@ -443,6 +425,11 @@ i {
   flex-direction: column;
 
   position: relative;
+}
+
+.fshop-content-kashiwa{
+  background-color: #0092dd;
+  padding-top: 5%;
 }
 
 .fshop-img {
@@ -457,23 +444,37 @@ i {
 
 .fshop-img img {
   width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .fshop-text {
   width: 82%;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
 }
 
 .fshop-text h4 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
 .fshop-text p:first-of-type {
   text-align: center;
-  margin: 8px 0 16px;
+  margin: 6px 0 12px;
+}
+
+.fshop-text .text-sml{
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* ラストオーダー */
+.fshop-text .text-abs{
+  display: none;
 }
 
 .fshop-map {
@@ -517,9 +518,7 @@ i {
   margin: auto;
   padding: 8% 0 4%;
 
-  /* background-color: #e12e2a; */
   background-color: #ed1b24;
-  /* ロゴの赤 */
   border: 7px solid #ffffff;
   border-radius: 40px;
 
@@ -806,7 +805,6 @@ i {
   margin-top: 15px;
   font-size: 16px;
   text-align: center;
-  /* display: inline-block; */
 }
 
 .news-btn {
@@ -830,9 +828,6 @@ i {
   padding: 8% 0 4%;
 
   background-color: #ed1b24;
-  /* background-color: #f1464c; */
-  /* background-color: #aa5213; */
-  /* background-color: #347e4f; */
   border: 7px solid #ffffff;
   border-radius: 40px;
 
@@ -969,21 +964,8 @@ footer {
   justify-content: center;
 }
 
-/* .footer-apple{
-    width: 100%;
-    padding-bottom: 50px;
-    margin: 0 auto;
-}
-
-.footer-apple img{
-    width: 50px;
-    display: block;
-    margin: auto;
-} */
-
 .footer-nav {
   width: 100%;
-  /* height: 200px; */
   margin: auto;
 }
 
@@ -1055,7 +1037,7 @@ footer {
   color: #ed1b24;
 }
 
-/* mobile view */
+/* mobile view ------------------------ */
 @media (min-width: 414px) {
   .body-container {
     width: 414px;
@@ -1065,9 +1047,30 @@ footer {
   body {
     background-color: #0092dd;
   }
+
+  .fshop-text h4 {
+    font-size: 20px;
+  }
+
+  /* ラストオーダー */
+  .fshop-text .text-abs {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    top: -8px;
+    right: 21px;
+    font-size: 9px;
+  }
+
+  .fshop-text .text-rel {
+    position: relative;
+  }
+
 }
 
-/* tablet view */
+/* tablet view ----------------------- */
 @media (min-width: 768px) {
   /* nav fixed */
   .nav-fixed-ul {
@@ -1185,7 +1188,7 @@ footer {
   }
 }
 
-/* pc view */
+/* pc view ------------------- */
 @media (min-width: 950px) {
   /* nav */
   .nav-pc {

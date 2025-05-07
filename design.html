@@ -1,274 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ぱりぱりんご</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ぱりぱりんご</title>
 
-        <link rel="stylesheet" href="assets/styles/slick.css" />
-        <link rel="stylesheet" href="assets/styles/design.css" />
-        <link rel="stylesheet" href="assets/styles/entire.css" />
-    </head>
-    <body>
-        <div class="body-container">
-            <!-- nav for pc -->
-            <div class="nav-pc mobile-none">
-                <div class="nav-text">
-                    <a href="index.html">ホーム</a>
-                    <a href="index.html#shop">出店情報</a>
-                    <a href="flavor.html">商品一覧</a>
-                    <a href="index.html#point">LINEポイント</a>
-                    <a href="about.html">こだわり</a>
-                    <a href="contact.html">お問い合わせ</a>
-                    <a href="design.html">HP制作依頼</a>
-                </div>
+    <link rel="stylesheet" href="assets/styles/slick.css" />
+    <link rel="stylesheet" href="assets/styles/design.css" />
+    <link rel="stylesheet" href="assets/styles/entire.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <!-- nav for pc -->
+      <div class="nav-pc mobile-none">
+        <div class="nav-text">
+          <a href="index.html">ホーム</a>
+          <a href="index.html#shop">出店情報</a>
+          <a href="flavor.html">商品一覧</a>
+          <a href="index.html#point">LINEポイント</a>
+          <a href="about.html">こだわり</a>
+          <a href="contact.html">お問い合わせ</a>
+          <a href="design.html">デザイン依頼</a>
+        </div>
+      </div>
+
+      <!-- sns for pc -->
+      <div class="sns-pc mobile-none">
+        <a href="https://lin.ee/90ANhKX" class="btn-circle">
+          <!-- <i class="fa-brands fa-line"></i> -->
+          <img src="assets/images/LINE_Brand_icon.png" alt="" />
+        </a>
+        <a href="https://instagram.com/pariparingo.narita" class="btn-circle">
+          <!-- <i class="fa-brands fa-instagram"></i> -->
+          <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
+        </a>
+        <a href="https://www.tiktok.com/@pariparingo" class="btn-circle">
+          <!-- <i class="fa-brands fa-tiktok"></i> -->
+          <img src="assets/images/tiktok-secondary-logo.png" alt="" />
+        </a>
+      </div>
+
+      <!-- design for pc -->
+      <div class="design-pc mobile-none">
+        <img src="assets/images/circle1-pc.png" alt="" class="circle1" />
+        <img src="assets/images/circle2-pc.png" alt="" class="circle2" />
+
+        <img src="assets/images/candy1-pc.png" alt="" class="candy1" />
+        <img src="assets/images/candy2-pc.png" alt="" class="candy2" />
+      </div>
+
+      <!-- overlay -->
+      <section class="nav-overlay navClose">
+        <div class="nav-overlay-content">
+          <div class="nav-logo">
+            <img src="assets/images/main-logo.png" alt="" />
+          </div>
+
+          <div class="nav-x">
+            <a href="javascript:void(0)" class="navClose" id="navClose">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+          </div>
+
+          <div class="nav-text">
+            <a href="index.html">ホーム</a>
+            <a href="index.html#shop">出店情報</a>
+            <a href="flavor.html">商品一覧</a>
+            <a href="index.html#point">LINEポイント</a>
+            <a href="about.html">こだわり</a>
+            <a href="contact.html">お問い合わせ</a>
+            <a href="design.html">デザイン依頼</a>
+          </div>
+
+          <div class="nav-sns">
+            <a href="https://lin.ee/90ANhKX" class="btn-circle">
+              <img src="assets/images/LINE_Brand_icon.png" alt="" />
+            </a>
+            <a
+              href="https://instagram.com/pariparingo.narita"
+              class="btn-circle"
+            >
+              <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
+            </a>
+            <a href="https://www.tiktok.com/@pariparingo" class="btn-circle">
+              <img src="assets/images/tiktok-secondary-logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- fixed-nav -->
+      <section class="nav-fixed">
+        <ul class="nav-fixed-ul">
+          <li class="li-radius">
+            <a href="index.html#shop">
+              <i class="fa-solid fa-store"></i>
+              出店情報
+            </a>
+          </li>
+          <li>
+            <a href="flavor.html">
+              <i class="fa-solid fa-apple-whole"></i>
+              商品一覧
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <i class="fa-solid fa-hand-point-up fa-flip-horizontal"></i>
+              こだわり
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-white" id="navOpen">
+              <i class="fa-solid fa-bars"></i>
+              <span>メニュー</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- container -->
+      <div class="container">
+        <!-- title -->
+        <section class="design-title">
+          <div class="title-container">
+            <a href="index.html" class="main-logo">
+              <img src="assets/images/main-logo.png" alt="" />
+            </a>
+
+            <a
+              href="https://instagram.com/pariparingo.narita"
+              class="btn-circle btn-instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <div class="design-header content-header">
+              <div class="design-header-logo jumpLogo">
+                <i class="fa-solid fa-brush"></i>
+              </div>
+              <div class="design-header-text">
+                <h2>Design</h2>
+                <h3>デザイン依頼</h3>
+              </div>
             </div>
+          </div>
+        </section>
 
-            <!-- sns for pc -->
-            <div class="sns-pc mobile-none">
-                <a href="https://lin.ee/90ANhKX" class="btn-circle">
-                    <!-- <i class="fa-brands fa-line"></i> -->
-                    <img src="assets/images/LINE_Brand_icon.png" alt="" />
-                </a>
-                <a href="https://instagram.com/pariparingo.narita" class="btn-circle">
-                    <!-- <i class="fa-brands fa-instagram"></i> -->
-                    <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
-                </a>
-                <a href="https://www.tiktok.com/@pariparingo" class="btn-circle">
-                    <!-- <i class="fa-brands fa-tiktok"></i> -->
-                    <img src="assets/images/tiktok-secondary-logo.png" alt="" />
-                </a>
-            </div>
+        <!-- content -->
+        <section class="design-container">
+          <div class="des-text">
+            <h3>サイトデザインについて</h3>
+            <p>
+              初めまして！こちらのWEBサイトを制作させていただいた、はらぱかクラフトです。
+            </p>
+            <p>
+              私は初期のぱりぱりんごバイトメンバーとして働かせていただき、毎月更新される出店情報や、ショップカードのデザインなども担当させていただきました！
+            </p>
 
-            <!-- design for pc -->
-            <div class="design-pc mobile-none">
-                <img src="assets/images/circle1-pc.png" alt="" class="circle1" />
-                <img src="assets/images/circle2-pc.png" alt="" class="circle2" />
+            <br /><br />
 
-                <img src="assets/images/candy1-pc.png" alt="" class="candy1" />
-                <img src="assets/images/candy2-pc.png" alt="" class="candy2" />
-            </div>
+            <h3>こんなデザイン、作ります。</h3>
+            <br />
+            <ul class="slider">
+              <li>
+                <img src="assets/images/harapaca-site.png" alt="" />
+              </li>
+              <li>
+                <img src="assets/images/greencafe.png" alt="" />
+              </li>
+              <li>
+                <img src="assets/images/ pari-prev.PNG" alt="" />
+              </li>
+              <li>
+                <img src="assets/images/pari-front.png" alt="" />
+              </li>
+              <li>
+                <img src="assets/images/pari-back.png" alt="" />
+              </li>
+              <li>
+                <img src="assets/images/banner1.PNG" alt="" />
+              </li>
+              <li>
+                <img src="assets/images/banner2.PNG" alt="" />
+              </li>
+            </ul>
+            <p>
+              はらぱかクラフトは、事業に込められた人の想いを噛み砕いてデザインに落とし込みます。
+            </p>
+            <p>
+              こだわりや奥行きのある事業にこそ、その魅力が一番良い形で伝わるデザインを、是非一緒に考えさせてください！
+            </p>
+            <p>
+              ・ホームページ<br />
+              ・チラシ<br />
+              ・バナー<br />
+              ・ショップカード<br />
+              ・オリジナルLINEスタンプ<br />
+            </p>
+            <p>
+              などなど、デザインのご相談やご依頼を承っております。お気軽にご相談ください！
+            </p>
+            <br />
+            <p>お問い合わせはこちら：</p>
+            <address>
+              <a class="des-mail" href="mailto:harapaca.craft@gmail.com"
+                >harapaca.craft@gmail.com</a
+              >
+            </address>
+          </div>
 
-            <!-- overlay -->
-            <section class="nav-overlay navClose">
-                <div class="nav-overlay-content">
-                    <div class="nav-logo">
-                        <img src="assets/images/main-logo.png" alt="" />
-                    </div>
+          <!-- <div class="des-btn">
+            <a href="https://harapaca-craft.com/"> HPを見てみる </a>
+            <a href="https://instagram.com/harapaca.craft">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div> -->
+        </section>
 
-                    <div class="nav-x">
-                        <a href="javascript:void(0)" class="navClose" id="navClose">
-                            <i class="fa-solid fa-xmark"></i>
-                        </a>
-                    </div>
-
-                    <div class="nav-text">
-                        <a href="index.html">ホーム</a>
-                        <a href="index.html#shop">出店情報</a>
-                        <a href="flavor.html">商品一覧</a>
-                        <a href="index.html#point">LINEポイント</a>
-                        <a href="about.html">こだわり</a>
-                        <a href="contact.html">お問い合わせ</a>
-                        <a href="design.html">HP制作依頼</a>
-                    </div>
-
-                    <div class="nav-sns">
-                        <a href="https://lin.ee/90ANhKX" class="btn-circle">
-                            <!-- <i class="fa-brands fa-line"></i> -->
-                            <img src="assets/images/LINE_Brand_icon.png" alt="" />
-                        </a>
-                        <a href="https://instagram.com/pariparingo.narita" class="btn-circle">
-                            <!-- <i class="fa-brands fa-instagram"></i> -->
-                            <img src="assets/images/Instagram_Glyph_Gradient.png" alt="" />
-                        </a>
-                        <a href="https://www.tiktok.com/@pariparingo" class="btn-circle">
-                            <!-- <i class="fa-brands fa-tiktok"></i> -->
-                            <img src="assets/images/tiktok-secondary-logo.png" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- fixed-nav -->
-            <section class="nav-fixed">
-                <ul class="nav-fixed-ul">
-                    <li class="li-radius">
-                        <a href="index.html#shop">
-                            <i class="fa-solid fa-store"></i>
-                            出店情報
-                        </a>
-                    </li>
-                    <li>
-                        <a href="flavor.html">
-                            <i class="fa-solid fa-apple-whole"></i>
-                            商品一覧
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                            <i class="fa-solid fa-hand-point-up fa-flip-horizontal"></i>
-                            こだわり
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-white" id="navOpen">
-                            <i class="fa-solid fa-bars"></i>
-                            <span>メニュー</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- container -->
-            <div class="container">
-                <!-- title -->
-                <section class="design-title">
-                    <div class="title-container">
-                        <a href="index.html" class="main-logo">
-                            <img src="assets/images/main-logo.png" alt="" />
-                        </a>
-
-                        <a href="https://instagram.com/pariparingo.narita" class="btn-circle btn-instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-
-                        <div class="design-header content-header">
-                            <div class="design-header-logo jumpLogo">
-                                <i class="fa-solid fa-brush"></i>
-                            </div>
-                            <div class="design-header-text">
-                                <h2>Design</h2>
-                                <h3>HP制作依頼</h3>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- content -->
-                <section class="design-container">
-                    <div class="des-text">
-                        <h3>このサイトデザインについて</h3>
-                        <p>初めまして！このサイトを作成させていただいた、はらぱかクラフトのHaraです。</p>
-
-                        <p>ぱりぱりんごバイトとして働きつつ、毎月更新される出店情報やショップカードのデザインも担当させていただいています！</p>
-
-                        <br />
-
-                        <h3>というのも、、！</h3>
-
-                        <p>
-                            私は現在、アメリカのオンライン大学に通いながら、フリーランスWebデザイナーを目指しています。それを店長ご夫婦にお伝えしたところ、「是非ぱりぱりんごのデザインもお願いしたい」と任せていただけることに...！
-                        </p>
-                        <br />
-                        <p>
-                            新規の個人事業だったということもあり、「もしかしたら経営の勉強ができたり、デザイナーとして経験を積めたりするのでは...？」という淡い期待を持ってアルバイトに応募した私ですが笑、想像していた以上に親身に話を聞いてくださったり、様々な機会を与えてくださったりと、本当に良い環境と人に恵まれたなぁと思います。
-                        </p>
-                        <br />
-                        <p>
-                            こんな風に若い世代を応援したり機会を与えてくれる人がこの地域にいるということがとても素敵だと感じますし、自分もそういう人になりたいと思います。最後に一つだけ書き残したいことは、決して店長ご夫婦の指示を受けてこの文章を書いている訳ではない、ということです。笑
-                            最後まで読んでいただきありがとうございます！
-                        </p>
-                        <br /><br />
-
-                        <h3>こんなデザイン、作ります。</h3>
-                        <br />
-                        <ul class="slider">
-                            <li>
-                                <a href="https://harapaca-craft.com/">
-                                    <img src="assets/images/harapaca-site.png" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://harapaca-greencafe.shop/">
-                                    <img src="assets/images/greencafe.png" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <img src="assets/images/ pari-prev.PNG" alt="" />
-                            </li>
-                            <li>
-                                <img src="assets/images/pari-front.png" alt="" />
-                            </li>
-                            <li>
-                                <img src="assets/images/pari-back.png" alt="" />
-                            </li>
-                            <li>
-                                <img src="assets/images/banner1.PNG" alt="" />
-                            </li>
-                            <li>
-                                <img src="assets/images/banner2.PNG" alt="" />
-                            </li>
-                        </ul>
-                        <p>
-                            HP制作、チラシ、バナー、ショップカード、オリジナルLINEスタンプなど、デザインのご相談やご依頼も承っております。お気軽にご相談ください！
-                        </p>
-                        <br />
-                        <p>はらぱかクラフトや海外オンライン大学への進学にご興味を持っていただけた方は、こちらのホームページやInstagramからご覧ください！</p>
-                    </div>
-
-                    <div class="des-btn">
-                        <a href="https://harapaca-craft.com/"> HPを見てみる </a>
-
-                        <a href="https://instagram.com/harapaca.craft">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                </section>
-
-                <div class="des-melt">
-                    <img src="assets/images/melting.png" alt="" />
-                </div>
-
-                <!-- footer -->
-                <footer>
-                    <div class="footer-content">
-                        <div class="footer-nav">
-                            <a href="index.html#shop">
-                                <p>出店情報</p>
-                            </a>
-                            <a href="flavor.html">
-                                <p>商品一覧</p>
-                            </a>
-                            <a href="index.html#point">
-                                <p>LINEポイント</p>
-                            </a>
-                            <a href="about.html">
-                                <p>こだわり</p>
-                            </a>
-                            <a href="#">
-                                <p>HP制作依頼</p>
-                            </a>
-                        </div>
-
-                        <div class="footer-title">
-                            <img src="assets/images/footer-title.png" alt="" />
-                        </div>
-
-                        <div class="contact-btn" id="contact">
-                            <a href="contact.html">
-                                お問い合わせはこちら
-                                <i class="fa-solid fa-circle-play"></i>
-                            </a>
-                        </div>
-
-                        <div class="footer-btn btn-circle">
-                            <a href="#">
-                                <i class="fa-regular fa-circle-up"></i>
-                            </a>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+        <div class="des-melt">
+          <img src="assets/images/melting.png" alt="" />
         </div>
 
-        <!-- scripts -->
-        <script src="https://kit.fontawesome.com/bb1ec9ad9e.js" crossorigin="anonymous"></script>
+        <!-- footer -->
+        <footer>
+          <div class="footer-content">
+            <div class="footer-nav">
+              <a href="index.html#shop">
+                <p>出店情報</p>
+              </a>
+              <a href="flavor.html">
+                <p>商品一覧</p>
+              </a>
+              <a href="index.html#point">
+                <p>LINEポイント</p>
+              </a>
+              <a href="about.html">
+                <p>こだわり</p>
+              </a>
+              <a href="#">
+                <p>デザイン依頼</p>
+              </a>
+            </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <div class="footer-title">
+              <img src="assets/images/footer-title.png" alt="" />
+            </div>
 
-        <script src="assets/js/slick.min.js"></script>
+            <div class="contact-btn" id="contact">
+              <a href="contact.html">
+                お問い合わせはこちら
+                <i class="fa-solid fa-circle-play"></i>
+              </a>
+            </div>
 
-        <script src="assets/js/javascript.js"></script>
-    </body>
+            <div class="footer-btn btn-circle">
+              <a href="#">
+                <i class="fa-regular fa-circle-up"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/bb1ec9ad9e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/javascript.js"></script>
+  </body>
 </html>
