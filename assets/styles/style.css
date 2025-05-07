@@ -429,7 +429,7 @@ i {
 
 .fshop-content-kashiwa{
   background-color: #0092dd;
-  padding-top: 5%;
+  padding-top: 4%;
 }
 
 .fshop-img {
@@ -466,6 +466,10 @@ i {
   margin: 6px 0 12px;
 }
 
+.fshop-text p:first-of-type.pad-even{
+  margin-bottom: 6px;
+}
+
 .fshop-text .text-sml{
   display: inline-block;
   font-size: 13px;
@@ -474,7 +478,16 @@ i {
 
 /* ラストオーダー */
 .fshop-text .text-abs{
-  display: none;
+  display: block;
+  position: absolute;
+
+  top: -8px;
+  right:7%;
+  font-size: 8px;
+}
+
+.fshop-text .text-rel {
+  position: relative;
 }
 
 .fshop-map {
@@ -1054,18 +1067,9 @@ footer {
 
   /* ラストオーダー */
   .fshop-text .text-abs {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-
     top: -8px;
     right: 21px;
     font-size: 9px;
-  }
-
-  .fshop-text .text-rel {
-    position: relative;
   }
 
 }
