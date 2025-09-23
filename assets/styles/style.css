@@ -371,8 +371,7 @@ i {
   flex-direction: row;
 
   position: absolute;
-  /* top: 52px; */
-  top: 45px;
+  top: 40px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
@@ -411,12 +410,11 @@ i {
 }
 
 .fshop-content {
-  width: 85%;
-  height: 530px;
+  width: 95%;
+  height: 500px;
   margin: auto;
   padding: 8% 0 4%;
 
-  background-color: #0092dd;
   background-color: #ed1b24;
   border: 7px solid #ffffff;
   border-radius: 40px;
@@ -427,14 +425,13 @@ i {
   position: relative;
 }
 
-.fshop-content-kashiwa{
-  background-color: #0092dd;
+.fshop-content-kashiwa {
   padding-top: 4%;
 }
 
 .fshop-img {
   width: 85%;
-  height: 200px;
+  height: 180px;
 
   margin: 5% auto;
 
@@ -450,7 +447,7 @@ i {
 }
 
 .fshop-text {
-  width: 82%;
+  width: 86%;
   margin: 0 auto;
   font-size: 14px;
   color: #ffffff;
@@ -466,23 +463,23 @@ i {
   margin: 6px 0 12px;
 }
 
-.fshop-text p:first-of-type.pad-even{
+.fshop-text p:first-of-type.pad-even {
   margin-bottom: 6px;
 }
 
-.fshop-text .text-sml{
+.fshop-text .text-sml {
   display: inline-block;
   font-size: 13px;
   line-height: 1.4;
 }
 
 /* ラストオーダー */
-.fshop-text .text-abs{
+.fshop-text .text-abs {
   display: block;
   position: absolute;
 
   top: -8px;
-  right:7%;
+  right: 7%;
   font-size: 8px;
 }
 
@@ -526,12 +523,12 @@ i {
 }
 
 .shop-content {
-  width: 85%;
-  height: 530px;
+  width: 95%;
+  height: 500px;
   margin: auto;
   padding: 8% 0 4%;
 
-  background-color: #ed1b24;
+  background-color: #0092dd;
   border: 7px solid #ffffff;
   border-radius: 40px;
 
@@ -543,7 +540,7 @@ i {
 
 .shop-img {
   width: 85%;
-  height: 200px;
+  height: 180px;
 
   margin: 5% auto;
 
@@ -556,7 +553,7 @@ i {
 }
 
 .shop-text {
-  width: 82%;
+  width: 86%;
   margin: auto;
   font-size: 16px;
   color: #ffffff;
@@ -591,8 +588,8 @@ i {
 }
 
 .flavor-content {
-  width: 85%;
-  height: 530px;
+  width: 95%;
+  height: 500px;
   margin: auto;
   padding: 4% 0 3%;
 
@@ -630,13 +627,11 @@ i {
 }
 
 .slider {
-  /*横幅94%で左右に余白を持たせて中央寄せ*/
-  /* width: 94%; */
   margin: 0 auto;
 }
 
 .slider li {
-  width: 60vw; /*スライダー内の画像を60vwにしてレスポンシブ化*/
+  width: 70vw;
   max-width: 250px;
 
   border-radius: 80px;
@@ -667,27 +662,23 @@ i {
 /*戻る、次へ矢印の位置*/
 .slick-prev,
 .slick-next {
-  /* display: none; */
-
-  position: absolute; /*絶対配置にする*/
+  position: absolute;
   z-index: 1000;
   top: 46%;
-  cursor: pointer; /*マウスカーソルを指マークに*/
-  outline: none; /*クリックをしたら出てくる枠線を消す*/
-  border-top: 4px solid #ffffff; /*矢印の色*/
-  border-right: 4px solid #ffffff; /*矢印の色*/
-  height: 14px;
-  width: 14px;
+  cursor: pointer;
+  outline: none;
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+  height: 12px;
+  width: 12px;
 }
 
 .slick-prev {
-  /*戻る矢印の位置と形状*/
   left: 6%;
   transform: rotate(-135deg);
 }
 
 .slick-next {
-  /*次へ矢印の位置と形状*/
   right: 6%;
   transform: rotate(45deg);
 }
@@ -835,8 +826,8 @@ i {
 }
 
 .point-content {
-  width: 85%;
-  height: 530px;
+  width: 95%;
+  height: 500px;
   margin: auto;
   padding: 8% 0 4%;
 
@@ -867,7 +858,7 @@ i {
 }
 
 .point-text {
-  width: 82%;
+  width: 86%;
   margin: 0 auto;
   font-size: 16px;
   color: #ffffff;
@@ -908,13 +899,11 @@ i {
 }
 
 .about-content {
-  width: 85%;
-  height: 530px;
+  width: 95%;
+  height: 500px;
   margin: auto;
   padding: 8% 0 4%;
 
-  /* background-color: #347e4f; */
-  /* background-color: #ed1b24; */
   background-color: #0092dd;
   border: 7px solid #ffffff;
   border-radius: 40px;
@@ -941,7 +930,7 @@ i {
 }
 
 .about-text {
-  width: 82%;
+  width: 86%;
   margin: auto;
   font-size: 16px;
   color: #ffffff;
@@ -1046,7 +1035,6 @@ footer {
 }
 
 .footer-btn i {
-  /* color: #a72301; */
   color: #ed1b24;
 }
 
@@ -1061,6 +1049,10 @@ footer {
     background-color: #0092dd;
   }
 
+  .content-header {
+    top: 45px;
+  }
+
   .fshop-text h4 {
     font-size: 20px;
   }
@@ -1072,6 +1064,30 @@ footer {
     font-size: 9px;
   }
 
+  .fshop-img,
+  .shop-img {
+    height: 200px;
+  }
+
+  .fshop-text,
+  .shop-text,
+  .point-text,
+  .about-text {
+    width: 82%;
+  }
+
+  .fshop-content,
+  .shop-content,
+  .flavor-content,
+  .point-content,
+  .about-content {
+    width: 85%;
+    height: 530px;
+  }
+
+  .slider li {
+    width: 60vw;
+  }
 }
 
 /* tablet view ----------------------- */
