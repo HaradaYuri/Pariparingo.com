@@ -20,22 +20,11 @@
  */
 
 // ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
 define('DB_NAME', 'zuoye_wdsox');
-
-/** Database username */
 define('DB_USER', 'zuoye_wp6');
-
-/** Database password */
 define('DB_PASSWORD', 'p5i4i7irx1');
-
-/** Database hostname */
 define('DB_HOST', 'mysql7024.xserver.jp');
-
-/** Database charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
-
-/** The database collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
 /**#@+
