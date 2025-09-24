@@ -247,7 +247,6 @@ i {
 
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -268,6 +267,8 @@ i {
 
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
+  white-space: nowrap;
+  overflow-wrap: normal;
 }
 
 .description-img {
@@ -551,7 +552,7 @@ i {
   color: #ffffff;
 }
 
-.shop-text--center{
+.shop-text--center {
   text-align: center;
 }
 
