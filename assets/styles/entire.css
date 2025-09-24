@@ -91,7 +91,6 @@ html {
 .nav-text {
   margin: auto;
   margin-bottom: 10px;
-  /* padding-top: 30px; */
 
   display: flex;
   flex-direction: column;
@@ -142,8 +141,6 @@ html {
   top: 0;
   right: 0;
   z-index: 4000;
-
-  /* transition: all 1s; */
 }
 
 .instagram-delay {
@@ -340,10 +337,6 @@ html {
     top: 40px;
     left: 25px;
     z-index: 5000;
-
-    /* width: 0px; */
-    /* animation: moveAnimation 2s linear forwards; */
-    /* animation-delay: 2s; */
   }
 
   /* title i jump */
@@ -372,7 +365,6 @@ html {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    /* opacity: 0; */
   }
 }
 

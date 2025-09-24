@@ -15,7 +15,6 @@ html {
 }
 
 body {
-  /* background-color: #0092dd; */
   font-family: 'M PLUS Rounded 1c', sans-serif;
 
   position: relative;
@@ -31,7 +30,6 @@ li,
 a {
   text-decoration: none;
   list-style: none;
-  /* color: #655d55; */
 }
 
 /* 丸いボタン */
@@ -109,7 +107,6 @@ i {
 }
 
 .nav-fixed-ul li {
-  /* display: block; */
   width: 100%;
 
   background-color: #ffffff;
@@ -125,7 +122,7 @@ i {
 
 .nav-fixed-ul li:nth-child(4) {
   border-radius: 0 50% 0 0;
-  /* background-color: #a72301; */
+
   background-color: #ed1b24;
 }
 
@@ -138,7 +135,7 @@ i {
 
   font-size: 12px;
   font-weight: bold;
-  /* color: #a72301; */
+
   color: #ed1b24;
 
   display: flex;
@@ -440,7 +437,7 @@ footer {
 
 .footer-nav {
   width: 100%;
-  /* height: 200px; */
+
   margin: auto;
 }
 
@@ -480,7 +477,6 @@ footer {
 }
 
 .footer-btn i {
-  /* color: #a72301; */
   color: #ed1b24;
 }
 
