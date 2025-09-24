@@ -448,7 +448,7 @@ i {
 
 .fshop-text p:first-of-type {
   text-align: center;
-  margin: 6px 0 12px;
+  margin: 4px 0 12px;
 }
 
 .fshop-text p:first-of-type.pad-even {
@@ -457,7 +457,7 @@ i {
 
 .fshop-text .text-sml {
   display: inline-block;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
 }
 
@@ -1097,6 +1097,10 @@ footer {
 
   .flavor-txt {
     margin-top: 18%;
+  }
+
+  .fshop-text .text-sml {
+    font-size: 13px;
   }
 
   .slider li {
